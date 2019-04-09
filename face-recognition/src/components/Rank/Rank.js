@@ -2,14 +2,14 @@ import React from 'react';
 import 'tachyons';
 
 
-const Rank = () => {
+const Rank = ({ name , entries }) => {
     return(
         <div>
             <div className= 'f3 white'>
-                {'Nombre, your current rank is.... '}
+                {`${name}, your current entry count is....` }
             </div>
             <div className= 'f1 white dim'>
-                {'#3'}
+                {entries}
             </div>
         </div>
     );
